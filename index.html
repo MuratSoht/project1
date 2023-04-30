@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .letters {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 50px;
+            list-style: none;
+            justify-content: center;
+            flex-flow: row wrap;
+            position: absolute;
+            top: 39%;
+            left: 35%;
+        }
+        .letter {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        .letter-link {
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            text-decoration: none;
+            color: blue;
+        }
+        .screen {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cell:not(:last-child) {
+            margin-right: 20px;
+        }
+        .cell {
+            width: 50px;
+            display: inline-block;
+            font-size: 24px;
+            height: 50px;
+            text-align: center;
+            background:linear-gradient(to bottom, transparent 93%, #132f63 7%);
+        }
+        .active {
+            color: grey;
+        }
+        .button-block {
+            display: flex;
+            justify-content: center;
+        }
+        .start {
+            padding: 15px 25px; 
+            background: blue;
+            color: white;
+            font-size: 24px;
+            border: none;
+            margin-bottom: 40px;
+        }
+        .play-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .word {
+            padding: 0;
+            display: flex;
+        }
+        .game {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .janre-text {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+        .time {
+            margin: 0;
+            font-size: 30px;
+            width: 30px;
+            height: 34px;
+        }
+        .attempts {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <div class="picture">
+            </div>
+            <div class="button-block">            
+                <submit class="start">
+                    Начать игру
+                </submit>
+            </div>
+            <div class="play-block"> 
+                <p class="time">
+                </p>
+                <p class="attempts">   
+                </p>
+                <div class="janre">
+                    <p class="janre-text">
+                    </p>
+                </div>
+                <ul class="word">
+                
+                </ul>
+            </div>
+        </div>
+        
+            <ul class="letters">
+                <li class="letter">
+                    <a href="#" class="letter-link">А</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Б</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">В</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Г</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Д</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Е</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ж</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">З</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">И</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Й</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">К</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Л</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">М</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Н</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">О</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">П</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Р</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">С</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Т</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">У</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ф</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Х</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ц</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ч</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ш</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Щ</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ь</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ы</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ъ</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Э</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Ю</a>
+                </li>
+                <li class="letter">
+                    <a href="#" class="letter-link">Я</a>
+                </li>
+            </ul>
+        <div class="symbol">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
